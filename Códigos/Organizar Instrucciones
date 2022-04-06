@@ -1,0 +1,16 @@
+'****************************************************************
+'*  Name    : Organizar_Instrucciones.BAS                       *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 03/06/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+ 
+' Una buena organización ayuda a evitar conflictos, o instrucciones que prelan a otras
+ 
+If var1 = 0 Then GoTo LAB_0  Branch VAR1, (LAB_0 LAB_1, LAB_2)
+If var1 = 1 Then GoTo LAB_1  On var1 GoTo LABEL_0, LABEL_1, LABEL_2
+If var1 = 2 Then GoTo LAB_2  On var1 GoSub LABEL_0, LABEL_1, LABEL_2
