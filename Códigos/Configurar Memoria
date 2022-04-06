@@ -1,0 +1,16 @@
+'****************************************************************
+'*  Name    : Configurar_Memoria.BAS                            *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 23/05/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+' Este ejemplo no aplica para todos lo micro-controladores.
+' En todo caso remitase al dasheet del dipositivo.
+ 
+' BUS I2C
+SCL_Pin= PORTA.7 
+SDA_Pin= PORTA.6
