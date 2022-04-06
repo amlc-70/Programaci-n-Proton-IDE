@@ -1,0 +1,20 @@
+'****************************************************************
+'*  Name    : Activar_Puertos_Condicional.BAS                   *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 23/05/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   :                                                   *
+'*                                                              *
+'****************************************************************
+ 
+' Sintaxis:   If (EXPRESSION) Then (INSTRUCTIONS)   
+ 
+ 
+If S1=0 Then PROG   ' El micro-controlador espera que S1 sea 0 para activar una rutina
+If S1=0 Then PROG2  ' El micro-controlador espera que S1 sea 1 para activar una rutina
+ 
+If S1=0 And S2=0 And S3=0 Then PROG3    ' En este caso para ejecutar la rutina S1, S2 y S3 deben ser =0
+ 
+EndIf ' asi debe terminar una condicional que no posee bucle (retorno)
