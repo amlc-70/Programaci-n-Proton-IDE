@@ -1,0 +1,16 @@
+'****************************************************************
+'*  Name    : Capturar_Valor Decimal.BAS                        *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 03/06/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+ 
+' Antes de proceder a capturar el valor se debe haber establecido la variable 
+' e invocar el nemonico respectivo
+ 
+Dim cc As Word
+Print At 1,1, "f -", Dec cc ' Imprimir el dato en el LCD desde la variable cc
