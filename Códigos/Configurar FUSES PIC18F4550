@@ -1,0 +1,62 @@
+'****************************************************************
+'*  Name    : Configurar_Fuses_18F4550.BAS                      *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 23/05/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+ 
+' No olvidar declarar el dispositivo
+ 
+'****************************************************************
+Device 18F4550
+'****************************************************************
+'>>>Configuraciones de Fuses<<<
+'****************************************************************
+ 
+    Config_Start
+ 
+    PLLDIV = 5              ' Divide por 5 (20 MHz la entrada del oscilador)
+    CPUDIV = OSC1_PLL2      ' [OSC1/OSC2 Src: /1][96 MHz PLL Src: /2]
+    USBDIV = 2              ' La fuente del reloj USB viene del lazo de enganche de fase a 96 MHz/2
+    FOSC = HSPLL_HS         ' El oscilador HS, lazo de enganche de fase habilitado, HS usado por USB
+    FCMEN = OFF             ' El monitor contra fallos del Reloj - Deshabilitado
+    IESO = On               ' El modo del oscilador Switchover - Habilitado
+    PWRT = On               ' PWRT - Habilitado
+    BOR = OFF               ' Brown-out - Reset/Habilitado en  hardware y software
+    BORV = 0                ' Configuracion Maxima
+    VREGEN = On             ' Regulador de voltaje USB / Habilitado
+    WDT = OFF               ' HW Deshabilitado /SW Controlado
+    WDTPS = 1               ' 1:1
+    MCLRE = On              ' MCLR Habilitado ; RE3 entrada Deshabilitada
+    LPT1OSC = OFF           ' Timer1 Configurado Para la operaci n maxima de poder
+    PBADEN = OFF            ' PORTB <4:0> Pines configurados como digital I/O en Reset
+    CCP2MX = On             ' CCP2 Entrada y Salida multiplexada con RC1
+    STVREN = OFF            ' La pila en el desbordamiento negativo completo no causar  Reanudaci n
+    LVP = OFF               ' Single-Supply ICSP Desahbilitado
+    XINST = OFF             ' La instruccion Coloca la extensi n, y el modo de Direccionamiento
+                            ' Indexado deshabilitadas (modo Legado)
+    Debug = OFF             ' El depurador de fondo deshabilitado, RB6 Y RB7 configurados
+                            ' Como de prop sito general Pines I/O
+    CP0 = OFF               ' Block 0 (000800-001FFFh) Sin proteccion de codigo
+    CP1 = OFF               ' Block 1 (002000-003FFFh) Sin proteccion de codigo
+    CP2 = OFF               ' Block 2 (004000-005FFFh) Sin proteccion de codigo
+    CPB = OFF               ' Boot block (000000-0007FFh) Sin proteccion de codigo
+    CPD = OFF               ' Data EEPROM Sin proteccion de codigo
+    WRT0 = OFF              ' Block 0 (000800-001FFFh) Sin proteccion de codigo
+    WRT1 = OFF              ' Block 1 (002000-003FFFh) Sin proteccion de codigo
+    WRT2 = OFF              ' Block 2 (004000-005FFFh) Sin proteccion de codigo
+    WRTB = OFF              ' Boot block (000000-0007FFh) Sin proteccion de codigo
+    WRTC = OFF              ' Configuration registers (300000-3000FFh) Sin proteccion de codigo
+    WRTD = OFF              ' Data EEPROM Sin proteccion de codigo
+    EBTR0 = OFF             ' Block 0 (000800-001FFFh) No protegido de lecturas de las tablas ejecutadas en otros bloques
+    EBTR1 = OFF             ' Block 1 (002000-003FFFh) No protegido de lecturas de las tablas ejecutadas en otros bloques
+    EBTR2 = OFF             ' Block 2 (004000-005FFFh) No protegido de lecturas de las tablas ejecutadas en otros bloques
+    EBTRB = OFF             ' Boot block (000000-0007FFh) No protegido de lecturas de las tablas ejecutadas en otros bloques
+ 
+    Config_End
+     
+'****************************************************************
