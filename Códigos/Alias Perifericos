@@ -1,0 +1,17 @@
+'****************************************************************
+'*  Name    : Alias_Perifericos.BAS                             *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 23/05/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   : Leer datasheet antes de configurar                *
+'*                                                              *
+'****************************************************************
+ 
+' Un alias o un modificador es una palabra que expresa un dispositivo conectado a
+' a un puerto:
+ 
+Symbol MOTOR = PORTA.1  ' Establece que existe un motor conectado en el puerto A pin 1
+Symbol SW = PORTA.2     ' Establece que existe un interruptor conectado en el puerto A pin 2
+Symbol S1 = PORTA.3     ' Establece que existe un interruptor conectado en el puerto A pin 3
