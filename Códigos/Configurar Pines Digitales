@@ -1,0 +1,15 @@
+'****************************************************************
+'*  Name    : Configurar_Pines_Digitales.BAS                    *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 23/05/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+ 
+' CONFIGURAR los pines como digital
+' Ejemplo:
+ 
+All_Digital= true ' Puertos A y B
