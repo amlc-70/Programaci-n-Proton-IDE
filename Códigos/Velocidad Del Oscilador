@@ -1,0 +1,21 @@
+'****************************************************************
+'*  Name    : Velocidad.BAS                                     *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 23/05/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   : Unidad Mhz                                        *
+'*          :                                                   *
+'****************************************************************
+ 
+' CONFIGURAR EL OSCILADOR DEL MICRO-CONTROLADOR
+' Ejemplo:
+ 
+Xtal 4
+'Xtal 10
+'xtal 20
+'xtal 40
+ 
+' Eliminar el (') antes de la palabra Xtal descomenta la linea.
+' Nota:  No puedes seleccionar mas de 1 Xtal a la vez.
