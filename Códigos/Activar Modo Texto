@@ -1,0 +1,20 @@
+'****************************************************************
+'*  Name    : Activar_Modo_Texto_LCD.BAS                        *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 03/06/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+ 
+' Se recomienda completar con espacios en blanco los caracteres no utilizados, Maximo 16
+' La instrucción imprime en pantalla el texto escrito entre "comilals dobles"
+ 
+Print At 1,1, "Mostrar Mensaje"    ' Escribir  "Mostrar Mensaje" en la linea 1 posición 1
+Print At 2,1, "Segundo Mensaje"    ' Escribir  "Segundo Mensaje" en la linea 2 posición 1
+DelayMS 5000  ' Retardo del estado del micro durante 5 segundos, se puede ajustar a valores menores o mayores.
+ 
+' Nota:
+' Antes de continuar con la ejecucion debe haber una pausa, esto evita el efecto rebote.
