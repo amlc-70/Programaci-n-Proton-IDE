@@ -1,0 +1,18 @@
+'****************************************************************
+'*  Name    : Retardos_Temporizacion.BAS                        *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 03/06/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+ 
+' Un retardo es una pausa en la constante tiempo de ejecución, en algunas ocaciones es necesario
+' establecer una pausa de al menos 1 milisegundo para evitar el efecto rebote en el micro-controlador
+ 
+DelayMS 1000  ' Retardo del estado del micro durante 1 segundo
+DelayMS 500   ' Retardo del estado del micro durante 1/2 segundo
+DelayUS 1000  ' Retardo del estado del micro durante 1 milisegundo
+pause 1000    ' No se recomienda este tipo de instrucción
