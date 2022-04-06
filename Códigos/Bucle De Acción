@@ -1,0 +1,23 @@
+'****************************************************************
+'*  Name    : Bucle_Accion.BAS                                  *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 03/06/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+ 
+' Esto ejecuta un bloque de instrucciones hasta que una condición sea verdadera
+ 
+var1 = 1    ' Variable a incrementar
+Repeat      ' Repetie hasta ser mayor del valor declarado
+Print At 1, 1, Dec var1  
+ 
+' Tambien podemos utilizar
+ 
+Repeat  High led: Until PORTA.0 = 1
+DelayMS 200       ' Evitar rebote
+Inc var1          ' Incrementar la variable
+Until var1 > 10   ' Con esto indicamos que al llegar a 10 rompa el bucle
