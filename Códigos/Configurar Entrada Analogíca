@@ -1,0 +1,18 @@
+'****************************************************************
+'*  Name    : Configurar_Entrada_Analogica.BAS                  *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 03/06/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+ 
+Declare Adin_Res    10    ' Resolución del convertidor analogico digital
+Declare Adin_Tad    2     ' CLK options are 0,1,2,3 (are based internal cycles)
+Declare Adin_Stime  100   ' Tiempo de muestreo
+ 
+adcon1 = %10000000        ' Setup del registro ADCON1, AN1 / RA1 es Analogico
+ 
+' Nota para mayor información refiera al dasheet del micro-controlador
