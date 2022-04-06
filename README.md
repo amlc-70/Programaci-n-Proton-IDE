@@ -2,7 +2,7 @@
 Esta pequeña colección la implemente en su momento, para ayudar a mis estudiantes de un curso de programación de micro-controladores. La forma cómo interactúan estos fragmentos de código en una rutina pueden dar excelentes resultados, solo es cuestión de comprensión, imaginación y constancia.
 
 Biblioteca De Códigos
-Indice Del Documento:
+Indice Del Documento PDF:
 1. Activar-Desactivar-Puertos
 2. Activar-Modo-Texto-LCD
 3. Activar-Por-Bucle
