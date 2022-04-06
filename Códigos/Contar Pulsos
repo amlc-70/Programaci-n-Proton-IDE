@@ -1,0 +1,23 @@
+'****************************************************************
+'*  Name    : Contar_Pulsos.BAS                                 *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 03/06/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+ 
+Dim WRD As Word ' Declarar la variable
+WRD - Counter Pin , 1000 ' La variable WRD contiene el valor en 1 segundo
+ 
+' Se puede utilizar cualquier nemonico
+ 
+' Para contar eventos y utilizarlos como condicion
+' Recuerda que debe existir una rutina a donde ir y su respectivo retorno al programa principal
+ 
+If WRD=1 Then (Aqui va la acción) 
+DelayMS 500
+cont1 = cont1 + 1 ' Esto ejecuta una suma en la memoria
+EndIf             ' Final de la condicional
