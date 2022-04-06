@@ -1,0 +1,14 @@
+'****************************************************************
+'*  Name    : Configurar_Teclado.BAS                            *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 23/05/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   : Varia segun el micro-controlador                  *
+'*          :                                                   *
+'****************************************************************
+ 
+Keypad_Port  = PORTB
+ 
+' Leer la dasheet correspondiente antes de seleccionar el puerto
