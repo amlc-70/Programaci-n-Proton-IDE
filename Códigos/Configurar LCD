@@ -1,0 +1,23 @@
+'****************************************************************
+'*  Name    : Configurar_LCD.BAS                                *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 23/05/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   : Valido para 16X2 16X4                             *
+'*          : Antes de configurar revisar la datsheet           *
+'*            del dispositivo.                                  *
+'****************************************************************
+'Seleccionar dispositivo
+'****************************************************************
+Device 18F4550
+'****************************************************************
+' Declarar Puertos
+'****************************************************************
+Declare LCD_Type = 0
+Declare LCD_DTPin = PORTD.0
+Declare LCD_ENPin = PORTD.5
+Declare LCD_RSPin = PORTD.4
+Declare LCD_Interface = 4
+Declare LCD_Lines = 2       ' Si se utiliza una 16X4 LCD_Lines debe ser = 4
