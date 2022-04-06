@@ -1,0 +1,13 @@
+'****************************************************************
+'*  Name    : Quiebre_De_Bucle.BAS                              *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 03/06/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+ 
+If var1 = 10 Then Break   ' Breack rompe el bucle cuando llega a 10
+DelayMS 200               ' No olvidar una pausa para evitar efecto rebote
