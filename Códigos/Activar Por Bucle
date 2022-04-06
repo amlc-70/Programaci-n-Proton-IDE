@@ -1,0 +1,42 @@
+'****************************************************************
+'*  Name    : Activar_Por_Bucle.BAS                             *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 03/06/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+Device 18F4550     ' Micro-controlador seleccionado como ejemplo
+'****************************************************************
+' Ejemplo 1
+ 
+Inicio:                     ' Etiqueta principal, ejecuta una rutina
+PORTD.2=1                   ' Activar (ALTA) PORTD PIN 2
+DelayMS 200                 ' Esperar 2 milisegundos
+PORTD.2=0                   ' Desactivar(CERO) PORTD PIN 2
+DelayMS 200                 ' Esperar 2 milisegundos
+GoTo Inicio                 ' Termina la rutina y regresa a la etiqueta
+ 
+'****************************************************************
+' Ejemplo 2
+ 
+Loop:                       ' Etiqueta de secuencia, ejecuta una rutina
+LED = 1                     ' Activar LED
+DelayMS 300                 ' Esperar 3 milisegundos
+For scan = 1 To 7           ' Comienzo del ciclo FOR Scanear hasta completar 7
+LED = LED << 1              ' Mientras LED sea menor a 7 debe continuar
+DelayMS 300                 ' Esperar 3 milisegundos
+Next                        ' Siguiente
+GoTo Loop                   ' Regresa a loop
+ 
+'****************************************************************
+' Ejemplo 3
+ 
+Otra:
+For n=1 To 50 Step 2        ' Etiqueta de secuencia, ejecuta una rutina
+PulsOut PORTD.0,2500        ' Manten el pulso en PORTD PIN 0 por 2 segundos y medio
+DelayMS 10                  ' Esperar 0.1 milisegundos
+Nextº                       ' Siguiente
+End                         ' FIN de la rutina
