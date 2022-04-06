@@ -1,0 +1,34 @@
+'****************************************************************
+'*  Name    : Configurar_Variables.BAS                          *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 23/05/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+' El nombre de la variable lo asignamos a nuestra entera conveniencia.
+ 
+'Ejemplos: (Utilizar nemonicos faciles de recordar)
+ 
+' Declaracion   Variable    Palabra
+  Dim           Tecla_1     As Byte
+  Dim           Salida_0    As Word
+  Dim           Contador-a  As Dword
+   
+' No es correcto expresarlo de esta forma, puede probocar errores.
+ 
+Tecla_1      var Byte
+Salida_0     var Word
+Contador-a   var Dword
+ 
+' No utilizar mnemónicos de esta forma
+ 
+' Declaracion   Variable        Palabra
+  Dim           pos1            As Byte
+  Dim           7este           As Byte 
+  Dim           motorderecho    As Byte  
+  Dim           sensor          As Word
+   
+' Trate de asociar sus nemonicos a la accion que representa.
