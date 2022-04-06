@@ -1,0 +1,30 @@
+'****************************************************************
+'*  Name    : Configurar_Comunicacion_Serial.BAS                *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 23/05/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   : Varia segun el micro-controlador                  *
+'*          : Leer la dasheet correspondiente antes de          *
+'*            seleccionar el puerto                             *
+'****************************************************************
+Device 16F877
+ 
+Serial_Baud = 9600
+Rsout_Pin = PORTC.6
+Rsout_Mode = TRUE
+Rsout_Pace = 1
+Rsin_Pin = PORTC.7
+Rsin_Mode = TRUE
+ 
+Hserial_Baud = 9600             ' 1# Speed  in baud = 9600
+Hserial_RCSTA = %10010000       ' 2# Enable serial port and continuous receive
+Hserial_TXSTA = %00100100       ' 3# Enable transmit and asynchronous mode
+Hserial_Clear = On              ' 4# Enable error clearing on received characters
+ 
+' Notas:
+' 1# Velocidad en baudios = 9600
+' 2# Activar puerto serial y recepcion continua
+' 3# Activar modo de transmision asincrona
+' 4# Activar auto limpieza al recibir caracteres
