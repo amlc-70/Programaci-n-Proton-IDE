@@ -1,0 +1,26 @@
+'****************************************************************
+'*  Name    : Configurar_LCD_Grafico.BAS                        *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 23/05/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   : Valido para LCD convencional                      *
+'*          : Antes de configurar revisar la datsheet           *
+'****************************************************************
+'Seleccionar dispositivo
+'****************************************************************
+Device 18F4550
+'****************************************************************
+' Declarar Puertos
+'****************************************************************
+ 
+LCD_DTPort = PORTD
+LCD_RSPin = PORTC.1
+LCD_ENPin = PORTE.0
+LCD_RWPin = PORTC.0
+LCD_CS1Pin = PORTE.1
+LCD_CS2Pin = PORTE.2
+LCD_Type = GRAPHIC       ' Escribir en mayusculas
+Internal_Font = OFF      ' Apagar las fuentes internas
+Font_Addr = 0
