@@ -1,0 +1,38 @@
+'****************************************************************
+'*  Name    : Activar-Desactivar_Puertos.BAS                    *
+'*  Author  : [Adrian Manuel Lopez Cosenza]                     *
+'*  Notice  : Copyright (c) 2015 [GNU-GPL3]                     *
+'*          : All Rights Reserved                               *
+'*  Date    : 23/05/2015                                        *
+'*  Version : 1.0  / NO COMPILAR ESTE EJEMPLO                   *
+'*  Notes   : Leer datasheet antes de configurar                *
+'*                                                              *
+'****************************************************************
+ 
+' Sintaxis:
+ 
+'High Port       ' High es una palabra reservada por PROTON para activar
+'High port.pin   ' La sintaxis correcta es indicar la accion con la palabra reservada seguida de la dirección del puerto
+'Low Port        ' Low es una palabra reservada por PROTON para desactivar (APAGAR)
+'Low port.pin    ' La sintaxis correcta es indicar la accion con la palabra reservada seguida de la dirección del puerto
+ 
+' Ejemplo:
+ 
+High PORTB  ' Esto activa todas las salidas del puerto B (Debe haberce declarado el puerto B como salida)
+Low PORTB   ' Esto desactiva todas las salidas del puerto B
+ 
+High PORTB  ' Tambien expresa que el puerto B cambiara al estado ALTO (ACTIVO)
+Low PORTB   ' Tambien expresa que el puerto B cambiara al estado BAJO (DESACTIVADO)
+ 
+' De igual manera podemos utilizar las siguientes sintaxis:
+ 
+PORTB=0                 ' El puerto B a nivel BAJO (APAGADO)
+PORTB.0=0               ' El puerto B.0 solo el pin 0 con nivel BAJO (APAGADO)
+PORTB=%00000000         ' Todo el puerto B con nivel bajo (APAGADO)
+PORTB=1                 ' Puerto B solo el pin 0 con nivel ALTO (ACTIVADO)
+PORTB.0=1               ' Puerto B solo el pin 0 con nivel ALTO (ACTIVADO)
+PORTB=7                 ' El puerto B reproduce el dato 00000111 Decimal
+PORTB=3                 ' El puerto B reproduce el dato 00000011 Decimal
+PORTB=$F                ' El puerto B reproduce el dato 00001111 Hexadecimal
+PORTB=$3F               ' El puerto B reproduce el dato 00111111 Hexadecimal
+PORTB=%11111111         ' Todo el puerto con nivel ALTO (ACTIVADO)
